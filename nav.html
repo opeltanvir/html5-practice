@@ -12,14 +12,29 @@
             line-height: 30px;
             font-size: 25px;
         }
-        nav li{
+         nav li{
             list-style: none;
-            float: left;
             padding: 10px;
-        } 
+        }
+        nav > ul > li{
+             float: left;
+        }
+       
+        nav li :hover{
+            background-color: darkgray;
+        }
         nav a{
             text-decoration: none;
             color: black;
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: lightgray;
+            padding: 0;
+        }
+        nav > ul > li:hover >ul{
+            display: block;
         }
     </style>
 </head>
@@ -28,7 +43,13 @@
       <ul>
         <li><a href="home.html">home</a></li>
         <li><a href="featurs.html">features</a></li>
-        <li><a href="news.html">News</a></li>
+        <li><a href="nav.html">nav</a>
+        <ul class="dropdown">
+            <li><a href="nav.html">Option 1</a></li>
+            <li><a href="nav.html">Option 2</a></li>
+            <li><a href="nav.html">Option 3</a></li>
+
+        </ul>
         <li><a href="about.html">About</a></li>
 
       </ul>
